@@ -1,0 +1,25 @@
+.sideMenu{
+    grid-area: sideMenu;
+    background-color:white;
+    border: 1px solid bluegrey;
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 5px ;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            0 1px 4px rgba(0, 0, 0, .3),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+     /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+    
+  
+  }
+
+  @media (max-width: 600px) {
+    .sideMenu{
+     display: none;
+    }
+
+  }

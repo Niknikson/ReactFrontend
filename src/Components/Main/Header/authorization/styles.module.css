@@ -1,0 +1,76 @@
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width:100%;
+}
+
+.formRegistration {
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid bluegrey;
+  box-shadow:  0 1px 4px rgba(0, 0, 0, .3),
+            0 1px 4px rgba(0, 0, 0, .3),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+
+  border-color: white;
+  
+}
+.formLogin {
+  width: 50%;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid bluegrey;
+  box-shadow:  0 1px 4px rgba(0, 0, 0, .3),
+            0 1px 4px rgba(0, 0, 0, .3),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+
+  border-color: white;
+  
+}
+
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+
+
+.inputs input{
+        border: 1px solid gray;
+        border-radius: 2px;
+        width: 50%;
+        height: 20px;
+        margin-top: 3%;
+        margin-bottom: 5px;
+}
+
+.button{
+    background-color: #1c58dbc2;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            0 1px 4px rgba(0, 0, 0, .3),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+     width: 90px;
+     height: 30%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+.button:hover{
+  color: white;
+}
+
+.err{
+  color: red;
+}

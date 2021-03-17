@@ -1,0 +1,63 @@
+@font-face {font-family: "Georgia"; src: url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.eot"); src: url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.woff") format("woff"), url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/08a3a3f82f0c66432e780f79e74924cd.svg#Georgia") format("svg"); }font-face {font-family: "Times New Roman"; src: url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.eot"); src: url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.woff") format("woff"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/32441506567156636049eb850b53f02a.svg#Times New Roman") format("svg"); }
+@font-face {font-family: "Georgia Ref"; src: url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.eot"); src: url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.woff") format("woff"), url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a7a5f26f9737f4fd14b68fe9d7ff1b9b.svg#Georgia Ref") format("svg"); }
+
+.newsContainer{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+  }
+
+  .itemNews{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    width: 100%;
+  }
+
+  .element{
+    border-bottom: 1px solid black;
+  }
+
+  .img{
+    max-width: 100px;
+    min-height: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .headerLink{
+     font-size: 1em;
+    font-family: "Georgia" ;
+    font-weight: bold;
+    color: black;
+
+  }
+
+  .content{
+    font-family: "Georgia Ref";
+    font-size: 0.9em;
+    
+  }
+
+
+  @media (max-width: 600px) {
+  .itemNews{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-height: 340px;
+    margin-top: 10px;
+  }
+   .img{
+    margin-top: 8px;
+    max-width: 150px;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  }
