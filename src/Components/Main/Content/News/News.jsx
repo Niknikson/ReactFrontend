@@ -45,8 +45,6 @@ const Test = () => {
   return (
     <div className={s.newsContainer}>
       <div>
-        {searchData}
-        {sortBy}
         <SelectNews
           currentPage={currentPage} setCurrentPage={setCurrentPage}
           sortBy={sortBy} setTypeSearch={setTypeSearch}

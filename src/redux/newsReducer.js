@@ -1,6 +1,4 @@
 import * as axios from "axios";
-import { getNewsApi } from '../api/axio'
-
 const GET_NEWS = "GET_NEWS"
 
 
