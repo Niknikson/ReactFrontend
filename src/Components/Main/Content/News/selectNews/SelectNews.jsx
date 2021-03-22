@@ -3,9 +3,9 @@ import { useDispatch } from 'react-redux'
 import { getNewsThunk } from '../../../../../redux/newsReducer'
 import s from './selectNews.module.css'
 
-const SelectNews =  ({ currentPage, setCurrentPage, searchData, setSearchData, sortBy, setTypeSearch}) => {
+const SelectNews = ({ setFetching, currentPage, setCurrentPage, searchData, setSearchData, sortBy, setTypeSearch}) => {
     const dispatch = useDispatch()
-    const getNewsSelected = () => {
+    const getNewsSelected = async() => {
         setCurrentPage(1)
         console.log(currentPage, searchData, sortBy)
         dispatch(getNewsThunk(currentPage, searchData, sortBy))
@@ -32,7 +32,7 @@ const SelectNews =  ({ currentPage, setCurrentPage, searchData, setSearchData, s
             <div >
                 <button
                     className={s.selectBtn}
-                    onClick={() => getNewsSelected()}>Find</button>
+                    onClick={getNewsSelected}>Find</button>
             </div>
         </div>
     )

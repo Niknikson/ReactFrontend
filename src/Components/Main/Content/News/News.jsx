@@ -46,6 +46,7 @@ const Test = () => {
     <div className={s.newsContainer}>
       <div>
         <SelectNews
+          setFetching={setFetching}
           currentPage={currentPage} setCurrentPage={setCurrentPage}
           sortBy={sortBy} setTypeSearch={setTypeSearch}
           searchData={searchData} setSearchData={setSearchData} />

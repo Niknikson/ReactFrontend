@@ -5,7 +5,7 @@ import Todo from './Todo/Todo'
 
 function AllDays() {
     const todos = useSelector(state => state.todoState.todo)
-
+   
     const todoElement = todos.length > 0 ?
         todos.map((todo) => <Todo key={todo.id} todo={todo} />)
         : 'Add new todo'

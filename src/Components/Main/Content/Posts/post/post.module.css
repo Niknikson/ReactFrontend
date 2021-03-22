@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/library.less");
+@import url('//db.onlinewebfonts.com/c/a1d2b51bf15c9e279891f06a037590ac?family=TLGeorgian');
+@import url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/variables.less");
+.post{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 300px;
+    height: 250px;
+    font-family: "Georgian";
+    background-color: white;
+	border-radius: 1px;
+	box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+}
+
+.img{
+display:flex ;
+align-items: flex-start;
+justify-content: center;
+min-width: 50%;
+max-width: 50%;
+object-fit:cover;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.creator{
+    font-size: 0.6rem;
+}
+
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    border-bottom: 1px solid grey;
+    font-family: "Playfair Display SC";
+}
+
+.message{
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    object-fit: cover;
+}
+
+
+
+.button button{
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: white;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    height: 25px;
+    line-height: 20px;
+     
+}
+
+.like{
+    margin-right: 30px;
+}
+
+.like:hover{
+    color: #4a7ff0c2;
+}
+.delete:hover{
+    color: tomato;
+}

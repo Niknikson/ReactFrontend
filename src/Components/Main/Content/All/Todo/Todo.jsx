@@ -6,6 +6,7 @@ import s from './todo.module.css'
 
 const Todo = ({ todo }) => {
     const dispatch = useDispatch()
+    
     const handelDelit = (id) => {
         dispatch(deleteAC(id))
     }
@@ -13,7 +14,7 @@ const Todo = ({ todo }) => {
     return (
         <div className={s.todo}>
             <div className={s.todoTile}>{todo.title}</div>
-            <button onClick={() => handelDelit(todo.id)} className={s.button}>Delet</button>
+            <button onClick={() => handelDelit(todo.id)} className={s.button}>Delet</button>   
         </div>
     )
 }

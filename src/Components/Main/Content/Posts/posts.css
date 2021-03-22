@@ -1,4 +1,4 @@
-.post{
+.post__content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,3 +21,9 @@
     color: #4a7ff0c2;
 }
 
+.posts__content{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+}
