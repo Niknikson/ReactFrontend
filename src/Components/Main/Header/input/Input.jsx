@@ -11,7 +11,9 @@ const InputTodo = () => {
         e.preventDefault()
         dispatch(createTodoAC({
             id: Date.now(),
-            title: name,}))
+            title: name,
+            completed: false
+        }))
         setName('')
     }
 

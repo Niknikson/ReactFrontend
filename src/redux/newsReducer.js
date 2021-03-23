@@ -14,7 +14,6 @@ const newsReducer = (state = defaultState, action) => {
         ...state,
         articles: [...state.articles, ...action.paylouad.articles],
         totalPage: action.paylouad.totalResults,
-       
       };
     default:
       return state;

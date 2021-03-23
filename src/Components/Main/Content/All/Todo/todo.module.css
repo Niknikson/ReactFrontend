@@ -43,3 +43,8 @@ border: 1px solid black;
 .button:hover{
     color: #f53232;
 }
+
+.checkBox{
+    margin-right: 1.5rem;
+}
+

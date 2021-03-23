@@ -2,6 +2,7 @@ import React from 'react';
 import s from './styles.module.css';
 import { useSelector } from 'react-redux'
 import Todo from './Todo/Todo'
+import InputTodo from '../../Header/input/Input';
 
 function AllDays() {
     const todos = useSelector(state => state.todoState.todo)
@@ -12,6 +13,7 @@ function AllDays() {
 
     return (
         <div className={s.todoContent}>
+            <div className={s.inputTodo}><InputTodo /></div>
             <div className={s.todoElement}> {todoElement}</div>
         </div>
     )

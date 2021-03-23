@@ -1,14 +1,25 @@
 .todoContent{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
     width: 100%;
+    padding: 1rem;
 }
 
 .todoElement{
     width: 80%;
+    margin-top: 1rem;
 }
 
-
-
+@media (min-width: 600px) {
+        .inputTodo{
+                display: none;
+        }
+} 
+@media (max-width: 600px) {
+        .todoElement{
+           width: 100%; 
+        }
+}
 
