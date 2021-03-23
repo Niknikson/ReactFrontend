@@ -20,6 +20,7 @@ const Todo = ({ todo }) => {
         dispatch(upDateTodoAc(id, upDateTodo))
     }
     const onChangeTodo = (e) => {
+        debugger
         setUpDateTodo(e.currentTarget.value) 
     }
     const onCheckTodo = (e, id) => {

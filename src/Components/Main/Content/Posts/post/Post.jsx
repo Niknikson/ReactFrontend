@@ -18,8 +18,8 @@ const Post = ({ post }) => {
                 </div>
                 
                 <div className={s.button}>
-                    <button className={s.like} ><i class="small material-icons">thumb_up</i></button>
-                    <button className={s.delete}><i class="small material-icons">delete</i></button>
+                    <button className={s.like} ><i className="small material-icons">thumb_up</i></button>
+                    <button className={s.delete}><i className="small material-icons">delete</i></button>
             </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ const SideMenu = (props) => {
     <div className={s.sideMenu}>
       <div>
         <NavLink style={{ color: "black" }} to="/home">
-          All Days
+          Home
         </NavLink>
       </div>
       <div>

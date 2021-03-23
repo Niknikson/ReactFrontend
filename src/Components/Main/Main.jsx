@@ -8,19 +8,21 @@ import Today from './Content/Today/Today'
 import News from "./Content/News/News";
 import Login from './Header/authorization/Login'
 import Registration from "./Header/authorization/Registration";
-import { Menu } from '@material-ui/core'
 import Posts from './Content/Posts/Posts'
+import Menu from './Menu/Menu'
+import { useState } from 'react'
 
 
 const Main = () => {
-
+ const [menuActive, setMenuActive] = useState(false)
 
     return (
       <div className="wrapper">
+        
         <BrowserRouter>
-          <Header />
+          <Header menuActive={menuActive} setMenuActive={setMenuActive} />
           <SideMenu />
-          {/* <Menu  header={"Burger menu"} items={items} /> */}
+          <Menu menuActive={menuActive} setMenuActive={setMenuActive}/>
           <div className="content">
             <Route path="/login" render={() => <Login />} />
             <Route path="/registration" render={() => <Registration />} />

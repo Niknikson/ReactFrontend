@@ -3,13 +3,14 @@ import { NavLink } from "react-router-dom";
 import s from "./header.module.css";
 import Input from "./input/Input";
 
-const MainHeader = (props) => {
+const MainHeader = ({ menuActive, setMenuActive}) => {
 
   return (
     <div className={s.contentHeader}>
       <div>
         <div className={s.burgerLogo}>
-          <div className={s.burgerBtn}>
+          <div className={s.burgerBtn}
+            onClick={() => setMenuActive(!menuActive)}>
             <span />
           </div>
           <div>
@@ -19,8 +20,6 @@ const MainHeader = (props) => {
       </div>
         
         <div className={s.add}>
-          {/* <input className={s.input} />
-        <div><button className={s.btnInput}>Add</button></div> */}
          <Input/>
         </div>
         <div className={s.login}>

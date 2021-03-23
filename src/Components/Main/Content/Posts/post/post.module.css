@@ -7,7 +7,7 @@
     flex-direction: row;
     margin: 20px;
     width: 300px;
-    height: 250px;
+    
     font-family: "Georgian";
     background-color: white;
 	border-radius: 1px;
@@ -57,8 +57,6 @@ object-fit:cover;
     object-fit: cover;
 }
 
-
-
 .button button{
     margin-bottom: 5px;
     border-radius: 3px;
@@ -67,8 +65,7 @@ object-fit:cover;
     font-size: 14px;
     font-weight: 400;
     height: 25px;
-    line-height: 20px;
-     
+    line-height: 20px;  
 }
 
 .like{
