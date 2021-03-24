@@ -11,13 +11,14 @@ const Posts = () => {
     const dispatch = useDispatch()
     const [modalActive, setModalActive] = useState(false)
     const [postData, setPostData] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
+    const [like, setLike] = useState(false)
     
     useEffect(() => {
         dispatch(getPosts());
     }, [dispatch]);
 
     const posts = useSelector(state => state.postData)
-    const post = posts.map((p) => <Post post={p} key={p._id}/>)
+    const post = posts.map((p) => <Post post={p} key={p._id} like={like} setLike={setLike} />)
 
     
     return (

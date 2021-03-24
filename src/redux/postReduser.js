@@ -6,8 +6,6 @@ import {
   LIKE,
 } from "../constants/actionTypes";
 
-
-
  const postReduser = (posts = [], action) => {
   switch (action.type) {
     case FETCH_ALL:

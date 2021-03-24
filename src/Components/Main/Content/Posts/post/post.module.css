@@ -7,7 +7,7 @@
     flex-direction: row;
     margin: 20px;
     width: 300px;
-    
+    min-height: 250px;
     font-family: "Georgian";
     background-color: white;
 	border-radius: 1px;
@@ -77,4 +77,8 @@ object-fit:cover;
 }
 .delete:hover{
     color: tomato;
+}
+
+.material-icons.active{
+    color: #4a7ff0c2;
 }

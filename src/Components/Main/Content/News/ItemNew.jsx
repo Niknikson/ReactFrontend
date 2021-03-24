@@ -2,7 +2,6 @@ import React from 'react'
 import s from './news.module.css'
 
 const itemNews = (props) => {
-debugger
     return (
         <div className={s.itemNews}>
             <div className={s.newsText}>

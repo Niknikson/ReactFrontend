@@ -14,13 +14,14 @@ const Test = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const dispatch = useDispatch()
 
-  // useEffect(() => {
-  //   if (fetching) {
-  //     console.log('fetching')
-  //     dispatch(getNewsThunk(currentPage, searchData, sortBy)).finally(() => setFetching(false))
-  //     setCurrentPage(prevState => prevState + 1)
-  //   }
-  // }, [fetching])
+  useEffect(() => {
+    if (fetching) {
+      console.log('fetching')
+      dispatch(getNewsThunk(currentPage, searchData, sortBy)).finally(() => setFetching(false))
+      setCurrentPage(prevState => prevState + 1)
+      console.log(currentPage, searchData, sortBy)
+    }
+  }, [fetching])
 
   useEffect(() => {
     document.addEventListener('scroll', scrolHanler)

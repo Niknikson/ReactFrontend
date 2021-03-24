@@ -1,14 +1,13 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { getNewsThunk } from '../../../../../redux/newsReducer'
+import { selectNewsThunk } from '../../../../../redux/newsReducer'
 import s from './selectNews.module.css'
 
 const SelectNews = ({ setFetching, currentPage, setCurrentPage, searchData, setSearchData, sortBy, setTypeSearch}) => {
     const dispatch = useDispatch()
-    const getNewsSelected = async() => {
+    const getNewsSelected = () => {
         setCurrentPage(1)
-        console.log(currentPage, searchData, sortBy)
-        dispatch(getNewsThunk(currentPage, searchData, sortBy))
+        dispatch(selectNewsThunk(currentPage, searchData, sortBy))
     }
     return (
         <div className={s.selectNews}>
