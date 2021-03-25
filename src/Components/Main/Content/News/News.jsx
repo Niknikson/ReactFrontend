@@ -37,7 +37,7 @@ const Test = () => {
 
   const scrolHanler = (e) => {
     if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100
-      && articles.length == totalCount
+      && articles.length === totalCount
     ) {
       setFetching(true)
     }

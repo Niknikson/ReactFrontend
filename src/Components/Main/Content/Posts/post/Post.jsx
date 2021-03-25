@@ -16,9 +16,9 @@ const Post = ({ post}) => {
             <img className={s.img} src={img} alt="альтернативный текст" />
             <div className={s.textContainer}>
             <div className={s.text}>
-            <div className={s.creator}>Creator {post.creator}</div>
-            <div className={s.title}>Title {post.title}</div>
-            <div className={s.message}>About {post.message}</div>
+            <div className={s.creator}>Creator : {post.creator}</div>
+            <div className={s.title}>Title: {post.title}</div>
+            <div className={s.message}>About - {post.message}</div>
             <div>{post.tags}</div>
                 </div>
                 

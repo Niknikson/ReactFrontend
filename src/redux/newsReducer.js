@@ -1,4 +1,5 @@
 import * as axios from "axios";
+import * as api from "../api/axio.js";
 const GET_NEWS = "GET_NEWS"
 const SELECT_NEWS = "SELECT_NEWS";
 
@@ -40,24 +41,24 @@ export const selectNewsAc = (paylouad) => {
   };
 };
 
-export const getNewsThunk = (currentPage, searchData, sortBy) => {
-  return async (dispatch) => {
-    const response = await axios.get(
-      `https://newsapi.org/v2/everything?qInTitle=${searchData}&sortBy=${sortBy}&page=${currentPage}&apiKey=9748adcb12234d12a12ddfbb5d9ce6cc`
-    );
+
+export const getNewsThunk = (currentPage, searchData, sortBy) => async (dispatch) => {
+  try {
+    const response = await api.getNews(currentPage, searchData, sortBy);
     dispatch(getNewsAc(response.data));
-  };
+  } catch (error) {
+    console.log(error.message);
+  }
 };
 
-export const selectNewsThunk = (currentPage, searchData, sortBy) => {
-  return async (dispatch) => {
-    const response = await axios.get(
-      `https://newsapi.org/v2/everything?qInTitle=${searchData}&sortBy=${sortBy}&page=${currentPage}&apiKey=9748adcb12234d12a12ddfbb5d9ce6cc`
-    );
+export const selectNewsThunk = (currentPage, searchData, sortBy) => async (dispatch) => {
+  try {
+    const response = await api.getNews(currentPage, searchData, sortBy);
     dispatch(selectNewsAc(response.data));
-  };
+  } catch (error) {
+    console.log(error.message);
+  }
 };
-
 
 
 export default newsReducer;

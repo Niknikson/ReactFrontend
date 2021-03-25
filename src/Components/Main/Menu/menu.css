@@ -2,8 +2,9 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
+    min-height: 100%;
     left: 0;
-    transform: translate(-140%);
+    transform: translate(-160%);
     transition: all 0.2s;
 }
 

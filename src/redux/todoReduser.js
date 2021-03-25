@@ -59,7 +59,6 @@ export const createTodoAC = (paylouad) => {
   };
 };
 export const upDateTodoAc = (id, paylouad) => {
-  debugger;
   return {
     type: UPDATE_TODO,
     id,
@@ -67,7 +66,6 @@ export const upDateTodoAc = (id, paylouad) => {
   };
 };
 export const checkTodoAc = (id) => {
-  debugger
   return {
     type: CHECK_TODO,
     id,
