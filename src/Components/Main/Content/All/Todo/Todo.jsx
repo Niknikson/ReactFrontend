@@ -38,6 +38,7 @@ const Todo = ({ todo }) => {
                     className={s.todoTile}>{todo.title}</div>}
             {editMode &&
                 <input
+                className={s.todoInput}
                 onChange={onChangeTodo}
                 value={upDateTodo}
                 autoFocus={true}

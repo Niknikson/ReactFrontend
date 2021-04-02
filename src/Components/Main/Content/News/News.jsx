@@ -5,6 +5,7 @@ import {  getNewsThunk } from "../../../../redux/newsReducer";
 import ItemNews from './ItemNew';
 import { useState } from 'react';
 import SelectNews from './selectNews/SelectNews';
+import Prelouder from '../../../../untils/prelouder/Prelouder';
 
 
 const Test = () => {
@@ -32,7 +33,8 @@ const Test = () => {
 
   const totalCount = useSelector(state => state.newsData.totalPage)
   const articles = useSelector(state => state.newsData.articles)
-  
+  const isFetchingPrelouder = useSelector(state => state.newsData.isFetching)
+
   const element = articles.map((a) => <ItemNews  key={a.publishedAt} article={a} /> )
 
   const scrolHanler = (e) => {
@@ -52,7 +54,16 @@ const Test = () => {
           sortBy={sortBy} setTypeSearch={setTypeSearch}
           searchData={searchData} setSearchData={setSearchData} />
       </div>
-        {element}
+      {element}
+      <div className={s.prelouderNews}>
+      {
+        isFetchingPrelouder === false
+          ?
+           null 
+          :
+          <Prelouder/>
+        }
+      </div>
     </div>
   );
 };
