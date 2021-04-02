@@ -72,5 +72,11 @@ ul {
     padding-top: 5px;
 }
 
-
-
+@media (max-width: 600px) {
+        .menu__content{
+                width: 100%;
+        }
+        .blur{
+            display: none;
+        }
+} 

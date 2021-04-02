@@ -20,7 +20,7 @@ const todoReducer = (state = defaultState, action) => {
     case CREATE_TODO:
       return {
         ...state,
-        todo: [...state.todo, action.paylouad],
+        todo: [action.paylouad, ...state.todo],
       };
     case UPDATE_TODO:
       return {
