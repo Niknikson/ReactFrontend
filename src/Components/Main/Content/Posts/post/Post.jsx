@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { deletePost } from '../../../../../actions/posts'
+import { deletePost } from '../../../../../store/actions/posts'
 import s from './post.module.css'
 
 

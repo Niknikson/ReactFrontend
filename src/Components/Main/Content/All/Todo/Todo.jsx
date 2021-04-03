@@ -1,5 +1,5 @@
 import React from 'react'
-import { deleteAc, upDateTodoAc, checkTodoAc} from '../../../../../redux/todoReduser'
+import { deleteAc, upDateTodoAc, checkTodoAc} from '../../../../../store/todoReduser'
 import { useDispatch } from 'react-redux'
 import s from './todo.module.css'
 import { useState } from 'react'

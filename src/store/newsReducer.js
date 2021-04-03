@@ -1,5 +1,4 @@
-import * as axios from "axios";
-import * as api from "../api/axio.js";
+import * as api from "../api/api.js";
 const GET_NEWS = "GET_NEWS"
 const SELECT_NEWS = "SELECT_NEWS";
 const SET_PRELOUDER = "SET_PRELOUDER";

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { selectNewsThunk } from '../../../../../redux/newsReducer'
+import { selectNewsThunk } from '../../../../../store/newsReducer'
 import s from './selectNews.module.css'
 
 const SelectNews = ({ setFetching, currentPage, setCurrentPage, searchData, setSearchData, sortBy, setTypeSearch}) => {

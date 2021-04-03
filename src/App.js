@@ -1,11 +1,11 @@
 import React from 'react';
 import Main from './Components/Main/Main'
-import s from "./index.module.css";
+import "./index.css";
 
 
 const App = () => {
   return (
-    <div className={s.container}>
+    <div className="container">
       <Main />
     </div>
   );

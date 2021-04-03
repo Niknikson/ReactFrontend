@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Modal from './form/Modal'
 import { useDispatch, useSelector } from "react-redux";
 import  './posts.css'
-import { getPosts } from '../../../../actions/posts';
+import { getPosts } from '../../../../store/actions/posts';
 import Post from './post/Post';
 import { useEffect } from 'react';
 

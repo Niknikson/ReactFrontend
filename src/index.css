@@ -40,3 +40,7 @@ body {
   background: #f4f4f4;
 }
 
+.container{
+    max-width: 1000px;
+    margin: auto;
+}

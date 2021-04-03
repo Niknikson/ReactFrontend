@@ -6,14 +6,14 @@ const CHECK_TODO = "CHECK_TODO"
 
 const defaultState = {
   todo: [
-    { id: 1, title: "delectus aut autem", completed: false },
+    { id: 1, title: "Клікни 2 раза щом змінити", completed: false },
     { id: 2, title: "quis ut nam facilis et officia qui", completed: false },
     { id: 3, title: "fugiat veniam minus", completed: true },
-    { id: 4, title: "et porro tempora", completed: true },
+    { id: 4, title: "Клікни 2 раза щом змінити", completed: true },
     { id: 5, title: "laboriosam mollitia et enim ", completed: false },
     { id: 6, title: "qui ullam ratione quibusdam", completed: false },
   ],
-}
+};
 
 const todoReducer = (state = defaultState, action) => {
   switch (action.type) {

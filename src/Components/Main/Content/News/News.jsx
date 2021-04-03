@@ -1,7 +1,7 @@
 import s from './news.module.css'
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {  getNewsThunk } from "../../../../redux/newsReducer";
+import {  getNewsThunk } from "../../../../store/newsReducer";
 import ItemNews from './ItemNew';
 import { useState } from 'react';
 import SelectNews from './selectNews/SelectNews';

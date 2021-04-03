@@ -4,7 +4,7 @@ import {
   UPDATE,
   DELETE,
   LIKE,
-} from "../constants/actionTypes";
+} from "./constants/actionTypes";
 const defaultstate = [
   {
     creator: 'Nic',

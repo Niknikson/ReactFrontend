@@ -6,7 +6,7 @@ import {
   LIKE,
 } from "../constants/actionTypes";
 
-import * as api from "../api/axio.js";
+import * as api from "../../api/api.js";
 
 export const getPosts = () => async (dispatch) => {
   try {

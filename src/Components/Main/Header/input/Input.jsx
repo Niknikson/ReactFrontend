@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { createTodoAC } from '../../../../redux/todoReduser'
+import { createTodoAC } from '../../../../store/todoReduser'
 import s from '../header.module.css'
 
 const InputTodo = () => {

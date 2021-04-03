@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.css'
-import SideMenu from './sideMeny/sideMenu'
+import SideMenu from './SideMeny/SideMenu'
 import Header from './Header/Header'
 import { BrowserRouter, Route } from "react-router-dom"
 import AllDays from './Content/All/AllDays'

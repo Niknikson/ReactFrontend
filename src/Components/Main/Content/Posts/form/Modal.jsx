@@ -1,7 +1,7 @@
 import React from 'react'
 import './postForm.css'
 import { useDispatch } from "react-redux";
-import { createPost } from '../../../../../actions/posts';
+import { createPost } from '../../../../../store/actions/posts';
 const Modal = ({ active, setActive, postData, setPostData }) => {
     const dispatch = useDispatch()
     const clear = () => {
