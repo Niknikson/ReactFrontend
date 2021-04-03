@@ -24,7 +24,7 @@ const InputTodo = () => {
                 type='text'
                 onChange={(e) => setName(e.currentTarget.value)}
                 value={name}
-                placeholder=''
+                placeholder='Add todo'
             />
             <button
                 className={s.btnInput}
